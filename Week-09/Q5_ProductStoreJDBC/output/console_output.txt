@@ -1,0 +1,73 @@
+$ java -cp ".:mysql-connector-j.jar" ProductStore
+Connected to store_db successfully.
+
+===== STORE MENU =====
+1. Insert a new product
+2. Retrieve product by Product ID
+3. Update product quantity
+4. Display products with quantity below 10
+5. Exit
+Enter your choice: 1
+Enter Product ID: 6
+Enter Product Name: Mechanical Keyboard
+Enter Price: 3499
+Enter Quantity: 7
+1 product inserted successfully.
+
+===== STORE MENU =====
+1. Insert a new product
+2. Retrieve product by Product ID
+3. Update product quantity
+4. Display products with quantity below 10
+5. Exit
+Enter your choice: 2
+Enter Product ID: 3
+ProductID  ProductName               Price  Quantity
+----------------------------------------------------
+3          HDMI Cable               349.00        40
+
+===== STORE MENU =====
+1. Insert a new product
+2. Retrieve product by Product ID
+3. Update product quantity
+4. Display products with quantity below 10
+5. Exit
+Enter your choice: 2
+Enter Product ID: 99
+No product found with ID 99.
+
+===== STORE MENU =====
+1. Insert a new product
+2. Retrieve product by Product ID
+3. Update product quantity
+4. Display products with quantity below 10
+5. Exit
+Enter your choice: 3
+Enter Product ID: 1
+Enter new Quantity: 6
+Quantity updated successfully.
+
+===== STORE MENU =====
+1. Insert a new product
+2. Retrieve product by Product ID
+3. Update product quantity
+4. Display products with quantity below 10
+5. Exit
+Enter your choice: 4
+Products with quantity below 10:
+ProductID  ProductName               Price  Quantity
+----------------------------------------------------
+4          Laptop Stand            1299.00         5
+1          Wireless Mouse           599.00         6
+6          Mechanical Keyboard     3499.00         7
+2          USB Keyboard             899.00         8
+
+===== STORE MENU =====
+1. Insert a new product
+2. Retrieve product by Product ID
+3. Update product quantity
+4. Display products with quantity below 10
+5. Exit
+Enter your choice: 5
+Exiting... Goodbye!
+

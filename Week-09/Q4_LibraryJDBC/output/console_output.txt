@@ -1,0 +1,93 @@
+$ java -cp ".:mysql-connector-j.jar" LibraryManagement
+Connected to library_db successfully.
+
+===== LIBRARY MENU =====
+1. Insert a new book
+2. Search book by Book ID
+3. Display all available books
+4. Issue a book (change availability)
+5. Exit
+Enter your choice: 3
+BookID  Title                        Author                     Price  Availability
+----------------------------------------------------------------------------------
+101     Let Us C                     Yashavant Kanetkar        399.00  Available
+102     Head First Java              Kathy Sierra              650.00  Available
+104     Database System Concepts     Abraham Silberschatz      925.00  Available
+
+===== LIBRARY MENU =====
+1. Insert a new book
+2. Search book by Book ID
+3. Display all available books
+4. Issue a book (change availability)
+5. Exit
+Enter your choice: 1
+Enter Book ID: 105
+Enter Title: Introduction to Algorithms
+Enter Author: Thomas H. Cormen
+Enter Price: 1450
+1 book inserted successfully.
+
+===== LIBRARY MENU =====
+1. Insert a new book
+2. Search book by Book ID
+3. Display all available books
+4. Issue a book (change availability)
+5. Exit
+Enter your choice: 2
+Enter Book ID to search: 105
+BookID  Title                        Author                     Price  Availability
+----------------------------------------------------------------------------------
+105     Introduction to Algorithms   Thomas H. Cormen         1450.00  Available
+
+===== LIBRARY MENU =====
+1. Insert a new book
+2. Search book by Book ID
+3. Display all available books
+4. Issue a book (change availability)
+5. Exit
+Enter your choice: 2
+Enter Book ID to search: 110
+No book found with ID 110.
+
+===== LIBRARY MENU =====
+1. Insert a new book
+2. Search book by Book ID
+3. Display all available books
+4. Issue a book (change availability)
+5. Exit
+Enter your choice: 4
+Enter Book ID to issue: 102
+Book 102 issued. Availability changed to 'Issued'.
+
+===== LIBRARY MENU =====
+1. Insert a new book
+2. Search book by Book ID
+3. Display all available books
+4. Issue a book (change availability)
+5. Exit
+Enter your choice: 4
+Enter Book ID to issue: 103
+Book 103 does not exist or is already issued.
+
+===== LIBRARY MENU =====
+1. Insert a new book
+2. Search book by Book ID
+3. Display all available books
+4. Issue a book (change availability)
+5. Exit
+Enter your choice: 3
+BookID  Title                        Author                     Price  Availability
+----------------------------------------------------------------------------------
+101     Let Us C                     Yashavant Kanetkar        399.00  Available
+104     Database System Concepts     Abraham Silberschatz      925.00  Available
+105     Introduction to Algorithms   Thomas H. Cormen         1450.00  Available
+
+===== LIBRARY MENU =====
+1. Insert a new book
+2. Search book by Book ID
+3. Display all available books
+4. Issue a book (change availability)
+5. Exit
+Enter your choice: 5
+Exiting... Goodbye!
+

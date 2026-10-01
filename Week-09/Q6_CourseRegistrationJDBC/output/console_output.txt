@@ -1,0 +1,27 @@
+$ java -cp ".:mysql-connector-j.jar" CourseRegistrationSearch
+Enter Course Code: 21CSC203P
+
+Students registered for 21CSC203P - Advanced Programming Practice:
+StudentID          StudentName          Course     CourseName                       Semester
+--------------------------------------------------------------------------------------------
+S1001              Aditi Sharma         21CSC203P  Advanced Programming Practice    3
+S1002              Karthik Raj          21CSC203P  Advanced Programming Practice    3
+S1003              Nikhil Menon         21CSC203P  Advanced Programming Practice    3
+
+Total students registered: 3
+
+$ java -cp ".:mysql-connector-j.jar" CourseRegistrationSearch
+Enter Course Code: 21CSC202J
+
+Students registered for 21CSC202J - Operating Systems:
+StudentID          StudentName          Course     CourseName                       Semester
+--------------------------------------------------------------------------------------------
+S1002              Karthik Raj          21CSC202J  Operating Systems                3
+S1004              Sneha Iyer           21CSC202J  Operating Systems                3
+
+Total students registered: 2
+
+$ java -cp ".:mysql-connector-j.jar" CourseRegistrationSearch
+Enter Course Code: 18CSE999T
+No students are registered for the course code 18CSE999T.
+
