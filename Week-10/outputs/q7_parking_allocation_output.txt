@@ -1,0 +1,15 @@
+a) Facts:
+   slot(S1, Car, Available).
+   slot(S2, Bike, Occupied).
+   slot(S3, Car, Available).
+   slot(S4, Bike, Available).
+   slot(S5, Car, Occupied).
+
+b) Rule:
+   available_slot(S, Type) :- slot(S, Type, Available).
+
+c) Query: ?- available_slot(S, Car).
+   Available car slots: ['S1', 'S3']
+
+   Query: ?- available_slot(S, Bike).
+   Available bike slots: ['S4']

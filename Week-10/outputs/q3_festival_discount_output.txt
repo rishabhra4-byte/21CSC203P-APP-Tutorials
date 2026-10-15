@@ -1,0 +1,27 @@
+Original product list:
+  Headphones         Rs.1499
+  Phone Case         Rs.399
+  Smart Watch        Rs.3999
+  USB Cable          Rs.249
+  Bluetooth Speaker  Rs.2200
+  Notebook           Rs.1000
+
+b) Prices after applying the festival discount (map):
+  Headphones         Rs. 1499.00 -> Rs. 1199.20  (20% off)
+  Phone Case         Rs.  399.00 -> Rs.  399.00
+  Smart Watch        Rs. 3999.00 -> Rs. 3199.20  (20% off)
+  USB Cable          Rs.  249.00 -> Rs.  249.00
+  Bluetooth Speaker  Rs. 2200.00 -> Rs. 1760.00  (20% off)
+  Notebook           Rs. 1000.00 -> Rs. 1000.00
+
+c) Products costing more than Rs.1,000 (filter):
+  Headphones         Rs.1499
+  Smart Watch        Rs.3999
+  Bluetooth Speaker  Rs.2200
+
+d) Original list after processing (unchanged):
+  [('Headphones', 1499), ('Phone Case', 399), ('Smart Watch', 3999), ('USB Cable', 249), ('Bluetooth Speaker', 2200), ('Notebook', 1000)]
+
+   The pure function discounted_price() only reads the price passed to it and returns
+   a new value. It never assigns to the products list, so map() builds a brand-new list
+   (sale_products) and the original catalogue stays exactly as it was.

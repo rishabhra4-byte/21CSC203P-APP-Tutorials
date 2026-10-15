@@ -1,0 +1,24 @@
+Daily consumption (units):
+  Mon: 8.5
+  Tue: 12.0
+  Wed: 9.0
+  Thu: 14.5
+  Fri: 10.0
+  Sat: 16.0
+  Sun: 11.5
+
+a) Days with consumption above 10 units (filter): ['Tue', 'Thu', 'Sat', 'Sun']
+
+b) Daily cost at Rs.6 per unit (map):
+  Mon: Rs.51.00
+  Tue: Rs.72.00
+  Wed: Rs.54.00
+  Thu: Rs.87.00
+  Fri: Rs.60.00
+  Sat: Rs.96.00
+  Sun: Rs.69.00
+
+c) Total consumption (reduce): 81.5 units
+
+d) Weekly electricity bill (pure function): Rs.489.00
+   Original data after billing (unchanged): {'Mon': 8.5, 'Tue': 12.0, 'Wed': 9.0, 'Thu': 14.5, 'Fri': 10.0, 'Sat': 16.0, 'Sun': 11.5}

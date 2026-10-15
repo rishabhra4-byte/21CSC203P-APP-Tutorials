@@ -1,0 +1,31 @@
+Current salaries:
+  Ravi     Rs.35,000
+  Priya    Rs.52,000
+  Kumar    Rs.28,000
+  Meena    Rs.40,000
+  Sathish  Rs.39,500
+  Anitha   Rs.61,000
+
+b) Eligible for 10% increment (salary < Rs.40,000):
+  Ravi     Rs.35,000
+  Kumar    Rs.28,000
+  Sathish  Rs.39,500
+
+a) Revised salaries (map + lambda):
+  Ravi     Rs.35,000.00 -> Rs.38,500.00  (+10%)
+  Priya    Rs.52,000.00 -> Rs.52,000.00
+  Kumar    Rs.28,000.00 -> Rs.30,800.00  (+10%)
+  Meena    Rs.40,000.00 -> Rs.40,000.00
+  Sathish  Rs.39,500.00 -> Rs.43,450.00  (+10%)
+  Anitha   Rs.61,000.00 -> Rs.61,000.00
+
+c) Total expenditure before revision: Rs.255,500.00
+   Total expenditure after revision : Rs.265,750.00
+   Increase                         : Rs.10,250.00
+
+d) Why functional programming suits salary records:
+  - Salary data is sensitive; map() returns a NEW list, so the original records stay
+    unchanged and can be audited or compared later.
+  - Each rule (eligibility, increment, total) is a small independent function that is
+    easy to test and change, e.g. changing 10% to 12% touches one lambda.
+  - No shared mutable state means fewer bugs and the same input always gives the same output.

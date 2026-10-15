@@ -1,0 +1,21 @@
+a) Facts:
+   result(Arun, Python, Pass).
+   result(Arun, DataStructures, Pass).
+   result(Bala, Python, Pass).
+   result(Bala, DataStructures, Fail).
+   result(Charan, Python, Pass).
+   result(Charan, DataStructures, Pass).
+   result(Divya, Python, Fail).
+   result(Divya, DataStructures, Pass).
+
+b) Rule:
+   eligible(S) :- result(S, Python, Pass), result(S, DataStructures, Pass).
+
+c) Query: ?- eligible(S).
+   Eligible students: ['Arun', 'Charan']
+
+   Individual checks:
+   ?- eligible(Arun).  ->  Yes
+   ?- eligible(Bala).  ->  No
+   ?- eligible(Charan).  ->  Yes
+   ?- eligible(Divya).  ->  No

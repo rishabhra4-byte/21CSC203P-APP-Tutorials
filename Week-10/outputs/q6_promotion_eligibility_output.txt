@@ -1,0 +1,17 @@
+a) Facts:
+   experience(Ravi, 6).  training(Ravi, 'Completed').  rating(Ravi, 5).
+   experience(Priya, 3).  training(Priya, 'Completed').  rating(Priya, 4).
+   experience(Kumar, 8).  training(Kumar, 'Not Completed').  rating(Kumar, 5).
+   experience(Meena, 7).  training(Meena, 'Completed').  rating(Meena, 4).
+
+b) Rule:
+   promotable(E) :- experience(E, Y), Y >= 5, training(E, 'Completed'), rating(E, R), R >= 4.
+
+c) Query: ?- promotable(E).
+   Employees eligible for promotion: ['Meena', 'Ravi']
+
+   Reasoning for each employee:
+   Ravi   -> Eligible
+   Priya  -> Not eligible (experience below 5 years)
+   Kumar  -> Not eligible (training not completed)
+   Meena  -> Eligible
